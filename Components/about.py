@@ -1,5 +1,5 @@
 import streamlit as st 
-import PIL as Image 
+from PIL import Image
 
 def About_page():
     st.title("About")
@@ -13,7 +13,7 @@ def About_page():
 
     with col1:
         st.write("**Developer 1**")
-        st.image("Assets/My_photo.jpg", width=150, caption="Vineet Sharma",use_column_width=True)
+        st.image("Assets/My_photo.jpg", width=150, caption="Vineet Sharma")
         st.write("Main Developer")
 
     with col2:
@@ -28,7 +28,7 @@ def About_page():
         new_height = 1060  # Adjust this as needed
         image = image.resize((image.width, new_height))
 
-        st.image(image, width=150, caption="Nitin Sharma",use_column_width=True)
+        st.image(image, width=150, caption="Nitin Sharma")
         st.write("Assistant Developer")
     with col4:
         st.write("**Developer 4**")
@@ -94,6 +94,6 @@ Provides secure communication (e.g., used in HTTPS and digital signatures).
 Slower than AES because of large key size.
 Often combined with AES for hybrid encryption (e.g., RSA encrypts the AES key).
 ''')
-        
+
 if __name__ == "__main__":
     About_page()
