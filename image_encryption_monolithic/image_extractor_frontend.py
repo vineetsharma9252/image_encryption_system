@@ -83,7 +83,7 @@ def About_page():
 
     with col1:
         st.write("**Developer 1**")
-        st.image("Assets/My_photo.jpg", width=150, caption="Vineet Sharma")
+        # st.image("Assets/My_photo.jpg", width=150, caption="Vineet Sharma")
         st.write("Main Developer")
 
     with col2:
@@ -92,7 +92,7 @@ def About_page():
 
     with col3:
         st.write("**Developer 3**")
-        image = Image.open("Assets/nitin.png")
+        # image = Image.open("Assets/nitin.png")
 
 # Resize the image (new width, new height)
         new_height = 1060  # Adjust this as needed
